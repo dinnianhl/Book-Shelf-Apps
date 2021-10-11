@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Bookshelf Apps</title>
+    <link rel="stylesheet" href="assets/styles/style.css" />
+    <link rel="stylesheet" href="assets/styles/fontawesome/css/all.min.css" />
+  </head>
+  <body>
+    <header>
+      <h2>Book Shelf</h2>
+      <section class="search-box">
+        <form id="searchBook">
+          <input id="searchBookTitle" placeholder="Cari Buku" type="text" />
+          <button id="searchSubmit" type="submit"><i class="fas fa-search"></i></button>
+        </form>
+      </section>
+    </header>
+    <main>
+      <section class="delete-dialog">
+        <div class="text-dialog">
+          <h3>Apakah Anda yakin ingin menghapus buku ini?</h3>
+          <button class="cancel">Batal</button>
+          <button class="remove">Hapus</button>
+        </div>
+      </section>
+
+      <section class="greeting-box">
+        <h1>Selamat Datang di Book Shelf Apps !</h1>
+        <p>Anda dapat mengelola kegiatan membaca buku dengan lebih mudah menggunakan aplikasi Book Shelf.</p>
+        <img src="assets/image/book-lover.jpg" />
+      </section>
+      <section class="content">
+        <section class="profile-box">
+          <h1>Halo ! Dinnia Putri,</h1>
+          <p>Jumlah Buku Kamu Saat Ini</p>
+          <h2 id="jumlahBuku"></h2>
+        </section>
+        <section class="input-box">
+          <h2>Masukkan Buku Baru</h2>
+          <form id="inputBook">
+            <div class="input">
+              <input id="inputBookTitle" placeholder="Judul" type="text" required />
+            </div>
+            <div class="input">
+              <input id="inputBookAuthor" placeholder="Penulis" type="text" required />
+            </div>
+            <div class="input">
+              <input id="inputBookYear" placeholder="Tahun" type="number" required />
+            </div>
+
+            <button id="bookSubmit" type="submit">Simpan</button>
+          </form>
+        </section>
+
+        <section class="book-box">
+          <section class="book-shelf">
+            <p>Belum selesai dibaca</p>
+
+            <div id="unread"></div>
+          </section>
+
+          <section class="book-shelf">
+            <p>Selesai dibaca</p>
+
+            <div id="read"></div>
+          </section>
+        </section>
+      </section>
+    </main>
+    <script src="assets/js/data.js"></script>
+    <script src="assets/js/dom.js"></script>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
